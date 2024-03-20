@@ -57,4 +57,5 @@ If you're interested in contributing, please reach out. You can fork the reposit
 If you have any questions about the repo, open an issue or contact me directly. You can find more of my work at https://github.com/MartinVF12/TeamScope-Database.  
 
 
-<img width="734" alt="Captura de pantalla 2024-03-20 a la(s) 9 45 10 a m" src="https://github.com/MartinVF12/TeamScope-Database/assets/152545821/95902fe1-e44a-46fc-8354-1a0be665f2ac">
+<img width="644" alt="Captura de pantalla 2024-03-20 a la(s) 2 23 28 p m" src="https://github.com/MartinVF12/TeamScope-Database/assets/152545821/126e1c08-29ab-424f-9ac4-1a9d6f6c504f">
+
