@@ -49,7 +49,7 @@ The application will guide you through various options to view, add, and update 
 If you're interested in contributing, please reach out. You can fork the repository and submit a pull request, or open an issue with your ideas and feedback.
 
 ## Video Demo
-
+https://youtu.be/Yx-Y6y5BAOQ 
 
 
 ## Questions

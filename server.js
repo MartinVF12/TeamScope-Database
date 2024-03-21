@@ -119,13 +119,13 @@ function addDepartment() {
         connection.query(query, answer.departmentName, (err, res) => {
             if (err) throw err;
             console.log(`Department added: ${answer.departmentName}`);
-            viewAllDepartments(); // O init() para volver al menú
+            viewAllDepartments();
         });
     });
 }
 
 function addRole() {
-    // Obtener departamentos para la elección del departamento
+
     connection.query('SELECT * FROM department', (err, departments) => {
         if (err) throw err;
         const departmentChoices = departments.map(({ id, name }) => ({
@@ -164,7 +164,7 @@ function addRole() {
 
 
 function addEmployee() {
-    // Obtenemos roles para poder asignar al empleado
+
     connection.query('SELECT * FROM role', (err, roles) => {
         if (err) throw err;
 
@@ -190,7 +190,7 @@ function addEmployee() {
                 message: 'What is the employee\'s role?',
                 choices: roleChoices
             }
-            // Aquí podrías agregar más preguntas para cosas como el manager del empleado
+
         ]).then(answers => {
             const query = 'INSERT INTO employee (first_name, last_name, role_id) VALUES (?, ?, ?)';
             connection.query(query, [answers.firstName, answers.lastName, answers.roleId], (err, res) => {
@@ -203,7 +203,7 @@ function addEmployee() {
 }
 
 function updateEmployeeRole() {
-    // Obtenemos empleados y roles para poder hacer la actualización
+
     connection.query('SELECT * FROM employee', (err, employees) => {
         if (err) throw err;
 
@@ -219,7 +219,7 @@ function updateEmployeeRole() {
                 message: 'Which employee\'s role do you want to update?',
                 choices: employeeChoices
             }
-            // Continúa con preguntas sobre el nuevo rol
+
         ]).then(answer => {
             let chosenEmployee = answer.employeeId;
             connection.query('SELECT * FROM role', (err, roles) => {
@@ -249,8 +249,7 @@ function updateEmployeeRole() {
     });
 }
 
-
-// To exit the application
+// Leave de aplicaction
 function exitApp() {
     console.log('Goodbye!');
     connection.end();
